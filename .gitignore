@@ -1,24 +1,62 @@
-# Nestjs specific
-/dist
-/node_modules
-/build
-/tmp
-
-# Logs
-logs
-*.log
-npm-debug.log*
-pnpm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
-
-# dotenv environment variable files
+# Dependencies
+node_modules/
+vendor/
+# Environment files and secrets
 .env
-.env.development
-.env.test
-.env.production
-
-# temp directory
-.temp
-.tmp
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.jks
+*.keystore
+secrets/
+credentials/
+private/
+# Grafana and monitoring exports that may contain URLs, tokens or credentials
+grafana.ini
+grafana.db
+*.db
+*.sqlite
+*.sqlite3
+*api-key*
+*apikey*
+*token*
+*secret*
+*senha*
+*password*
+*credential*
+*credentials*
+dashboard-export*.json
+datasource*.json
+provisioning/
+# Logs and runtime files
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+# Build and cache output
+dist/
+build/
+.cache/
+.parcel-cache/
+coverage/
+# Archives
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
